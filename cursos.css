@@ -1,0 +1,42 @@
+/* Estilos básicos do menu */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o submenu */
+ul ul {
+    display: none; /* Submenu escondido por padrão */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ddd;
+    padding: 10px;
+    min-width: 180px;
+    border: 1px solid #ccc;
+}
+
+/* Exibe o submenu ao passar o mouse */
+li:hover > ul {
+    display: block;
+}
+
+/* Estilo do item do submenu */
+ul ul li {
+    display: block;
+    padding: 5px;
+}
